@@ -26,7 +26,7 @@ document.addEventListener('keyup', function (event) {
 
 //drag / drop
 const headerImg = document.querySelector('.intro img');
-headerImg.addEventListener('dragend', suchaDrag);
+headerImg.addEventListener('dragend', suchaDrag());
 function suchaDrag() {
     this.style.width = '200px';
 }
