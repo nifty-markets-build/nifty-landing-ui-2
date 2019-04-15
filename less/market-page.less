@@ -127,6 +127,13 @@
   }
   .card-deck{
     padding: 0px 100px 100px 100px;
+    margin:0;
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .card:hover{
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
   
   
@@ -136,4 +143,10 @@
     h2 a{
       font-size: 1.2rem;
     }
+  }
+  .slide-content .scroller {
+    width: 1024px;
+  }
+  * {
+    border: 1px solid #f00 !important;
   }
