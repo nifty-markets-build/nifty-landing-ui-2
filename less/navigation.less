@@ -2,9 +2,15 @@
     width: 100%;
     height: 90px;
     background: @main-bg;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px solid @navigation-border;
     position: fixed;
     z-index: 100;
+
+    @media (min-width: 992px) {
+			.main-navigation {
+				opacity: 0;
+			}  
+		}
 
     @media @mobile{
       position: relative;
