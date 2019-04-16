@@ -1,3 +1,5 @@
+
+
 .home {
 
     .intro {
@@ -129,6 +131,22 @@
     margin:0;
       -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
               animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              
+    @media @tablet {
+    padding:0px;
+    h5 {
+      display:none;
+    }
+  }
+    @media @mobile {
+      padding:0px 100px 100px 100px;
+    }
+}
+
+  .card-body{
+    @media @tablet {
+      padding:0px;
+    }
   }
   .card:hover{
       -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -144,6 +162,18 @@
     }
   }
   
+  .bg {
+    /* The image used */
+    background-image: url("/Week5-NiftyMarkets/nifty-landing-ui-2/images/background.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
   // FOR DEBUGGING
   // .slide-content .scroller {
