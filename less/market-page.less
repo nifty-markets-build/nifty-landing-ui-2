@@ -137,11 +137,15 @@
     h5 {
       display:none;
     }
-  }
+    @media @tablet2 {
+      padding:100px;
+    }
     @media @mobile {
       padding:0px 100px 100px 100px;
+      margin-top: 62px;
     }
 }
+  }
 
   .card-body{
     @media @tablet {
@@ -149,8 +153,7 @@
     }
   }
   .card:hover{
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transform: scale(1.1);
   }
   
   
@@ -170,6 +173,11 @@
   .cardBackground {
     position: absolute;
     width: 100%;
+    z-index: -100;
+    border-bottom: 2px solid blue;
+  }
+
+  .bodyBackground{
     z-index: -100;
     min-height: 100%;
     min-width: 1024px;
@@ -203,6 +211,7 @@
   .home .inverse-content {
     border-bottom: 0px solid #C0C0C0;
 }
+  
   
   // FOR DEBUGGING
   // .slide-content .scroller {

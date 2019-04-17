@@ -430,9 +430,15 @@ img {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) and (max-width: 575px) {
+  .card-deck {
+    padding: 100px;
+  }
+}
+@media (max-width: 767px) and (max-width: 500px) {
   .card-deck {
     padding: 0px 100px 100px 100px;
+    margin-top: 62px;
   }
 }
 @media (max-width: 767px) {
@@ -441,8 +447,7 @@ img {
   }
 }
 .card:hover {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transform: scale(1.1);
 }
 .intro .gamesIntro {
   padding: 0px 50px 0px 50px;
@@ -456,6 +461,11 @@ img {
 }
 .cardBackground {
   position: absolute;
+  width: 100%;
+  z-index: -100;
+  border-bottom: 2px solid blue;
+}
+.bodyBackground {
   z-index: -100;
   min-height: 100%;
   min-width: 1024px;
@@ -489,4 +499,23 @@ body h2 {
   padding-bottom: 30px;
   border-bottom: 0px solid #C0C0C0;
   border-top: 0px solid #C0C0C0;
+}
+.fa {
+  padding: 5px;
+  font-size: 12px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none!important;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-git {
+  background: black;
+  color: white;
 }
