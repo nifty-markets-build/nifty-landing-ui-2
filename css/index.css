@@ -455,16 +455,9 @@ img {
 }
 .cardBackground {
   position: absolute;
-  z-index: -100;
-  min-height: 100%;
-  min-width: 1024px;
-  /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+  z-index: -100;
+  border-bottom: 2px solid blue;
 }
 a {
   color: white;
@@ -483,6 +476,18 @@ body h2 {
 }
 .home .inverse-content {
   border-bottom: 0px solid #C0C0C0;
+}
+.bodyBackground {
+  z-index: -100;
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .home {
   padding-bottom: 30px;
