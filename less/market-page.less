@@ -1,0 +1,213 @@
+
+
+.home {
+
+    .intro {
+      padding: 90px 0 10px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      h2 {
+        margin-top: 20px;
+        color:blue;
+      }
+    }
+  
+    .content-section {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+     
+      
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+  
+        @media @mobile {
+          width: 100%;
+          padding: 0;
+        }
+      }
+  
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+  
+        @media @mobile {
+          width: 100%;
+          padding: 0;
+        }
+  
+        img {
+          border-radius: 10px;
+  
+          @media @mobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    
+
+  
+    .inverse-content {
+      padding-bottom: 30px;
+      border-bottom: 2px solid @navigation-border;
+  
+      .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+  
+        @media @mobile {
+          order: 1;
+        }
+      }
+  
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+  
+        @media @mobile {
+          order: 2;
+        }
+      }
+    }
+  
+    .content-destination {
+      width: 75%;
+      margin: 0 auto 30px;
+  
+      @media @mobile {
+        width: 100%;
+      }
+  
+      img {
+        border-radius: 10px;
+      }
+    }
+  
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px solid @navigation-border;
+      display: flex;
+      justify-content: space-between;
+  
+      @media @mobile {
+        flex-wrap: wrap;
+      }
+  
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+  
+        @media @mobile {
+          width: 80%;
+          margin: 0 auto 30px;
+        }
+        
+        .btn {
+          .button-creator(145px, 45px, @button-bg, @white, 1.8rem);     
+        }
+      }
+    }
+  }// home
+
+  //CAROUSEL
+  .containerCarousel{
+    padding-top: 90px;
+
+    @media @mobile {
+      padding-top: 0px;
+    }
+  }
+  .card-deck{
+    padding: 0px 100px 100px 100px;
+    margin:0;
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              
+    @media @tablet {
+    padding:0px;
+    h5 {
+      display:none;
+    }
+  }
+    @media @mobile {
+      padding:0px 100px 100px 100px;
+    }
+}
+
+  .card-body{
+    @media @tablet {
+      padding:0px;
+    }
+  }
+  .card:hover{
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  
+  .intro .gamesIntro{
+    padding: 0px 50px 0px 50px;
+
+    h2 a{
+      font-size: 1.2rem;
+    }
+  }
+  
+  .carousel-caption a {
+    text-decoration: none;
+    color:red;
+  }
+
+  .cardBackground {
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  a {
+    color:white;
+  }
+  p {
+    color:white;
+  }
+  body h2 {
+    color:white;
+  }
+  .destination h4{
+    color:white;
+  }
+  .gamesIntro h2{
+      margin-top: 0px;
+  }
+
+  .home .inverse-content {
+    border-bottom: 0px solid #C0C0C0;
+}
+  
+  // FOR DEBUGGING
+  // .slide-content .scroller {
+  //   width: 1024px;
+  // }
+  // * {
+  //   border: 1px solid #f00 !important;
+  // }
