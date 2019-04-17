@@ -456,32 +456,34 @@ img {
 }
 .cardBackground {
   position: absolute;
-  width: 100%;
   z-index: -100;
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 a {
   color: white;
 }
-@media (max-width: 500px) {
-  a {
-    color: black;
-  }
-}
 p {
   color: white;
-}
-@media (max-width: 500px) {
-  p {
-    color: black;
-  }
 }
 body h2 {
   color: white;
 }
-@media (max-width: 500px) {
-  body h2 {
-    color: black;
-  }
+.destination h4 {
+  color: white;
+}
+.gamesIntro h2 {
+  margin-top: 0px;
+}
+.home .inverse-content {
+  border-bottom: 0px solid #C0C0C0;
 }
 .home {
   padding-bottom: 30px;
