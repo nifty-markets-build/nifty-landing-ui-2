@@ -430,9 +430,15 @@ img {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) and (max-width: 575px) {
+  .card-deck {
+    padding: 100px;
+  }
+}
+@media (max-width: 767px) and (max-width: 500px) {
   .card-deck {
     padding: 0px 100px 100px 100px;
+    margin-top: 62px;
   }
 }
 @media (max-width: 767px) {
