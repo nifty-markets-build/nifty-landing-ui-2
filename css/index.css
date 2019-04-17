@@ -419,8 +419,6 @@ img {
 .card-deck {
   padding: 0px 100px 100px 100px;
   margin: 0;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @media (max-width: 767px) {
   .card-deck {
@@ -446,8 +444,15 @@ img {
     padding: 0px;
   }
 }
+.card {
+  background: rgba(0, 0, 0, 0.377);
+}
+.card h5 {
+  color: #ffffff;
+}
 .card:hover {
   transform: scale(1.1);
+  border: 2px solid #00a2ff;
 }
 .intro .gamesIntro {
   padding: 0px 50px 0px 50px;

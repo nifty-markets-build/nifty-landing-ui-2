@@ -129,8 +129,8 @@
   .card-deck{
     padding: 0px 100px 100px 100px;
     margin:0;
-      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-              animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      // -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      //         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
               
     @media @tablet {
     padding:0px;
@@ -152,8 +152,15 @@
       padding:0px;
     }
   }
+  .card {
+    background: rgba(0, 0, 0, 0.377);
+  }
+  .card h5 {
+    color: rgb(255, 255, 255);
+  }
   .card:hover{
     transform: scale(1.1);
+    border: 2px solid rgb(0, 162, 255);
   }
   
   
