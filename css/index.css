@@ -524,3 +524,9 @@ body h2 {
   background: black;
   color: white;
 }
+.team {
+  background: #ffffff;
+}
+.team h5 {
+  color: #000000;
+}
