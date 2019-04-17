@@ -240,7 +240,7 @@ img {
 }
 .main-navigation .nav-container .nav a {
   font-size: 2rem;
-  color: #212529;
+  color: white;
   text-decoration: none;
 }
 .footer {
@@ -453,6 +453,35 @@ img {
 .carousel-caption a {
   text-decoration: none;
   color: red;
+}
+.cardBackground {
+  position: absolute;
+  width: 100%;
+  z-index: -100;
+}
+a {
+  color: white;
+}
+@media (max-width: 500px) {
+  a {
+    color: black;
+  }
+}
+p {
+  color: white;
+}
+@media (max-width: 500px) {
+  p {
+    color: black;
+  }
+}
+body h2 {
+  color: white;
+}
+@media (max-width: 500px) {
+  body h2 {
+    color: black;
+  }
 }
 .home {
   padding-bottom: 30px;
